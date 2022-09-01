@@ -41,7 +41,6 @@
 
 .navbar span button{
     position: relative;
-    /* margin-right: 150px; */
     background-color: #f5f5f5;
     height: 50px;
     padding-left: 30px;
@@ -59,6 +58,10 @@
     padding: 1.5px;
     border-radius: 11px;
     border-style: none;
+}
+
+.fa-bars{
+    visibility: hidden;
 }
 
 .page1{
@@ -196,7 +199,7 @@
 }
 
 .page4{
-    height: 100vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,8 +233,9 @@
 }
 
 .page4 .bottom .card{
-    height: 33.33vh;
-    width: 20vw;
+    margin: 40px 60px;
+    height: 250px;
+    width: 200px;
 }
 
 .page4 .card img{
@@ -249,7 +253,7 @@
 }
 
 .page5 {
-    height: 100vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom right, #09C0F8, #0462EA);;
@@ -265,13 +269,15 @@
 .page5 .bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .page5 .bottom .card{
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 50px;
-    height: 75vh;
+    height: 600px;
     width: 25vw;
     background-color: #ffffff;
     border-radius: 10px;
@@ -375,7 +381,7 @@
 }
 
 .page6{
-    height: 100vh;
+    height: 800px;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 150px;
@@ -397,12 +403,12 @@
 .page6 .bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .page6 .bottom .card{
-    height: 25vh;
+    height: 200px;
     width: 35vw;
     background-color: #ffffff;
     margin: 10px;
@@ -473,9 +479,10 @@
 }
 
 .page8{
-    height: 30vh;
+    height: 300px;
     margin-top: 120px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -526,6 +533,426 @@
     width: 30px;
 }
 
+@media screen and (max-width: 1300px) {
+    .navbar .logo{
+        margin-left: 50px;
+    }
+
+    .list-items{
+        display: flex;
+        margin-left: 0px;
+    }
+
+    .navbar span{
+        margin-right: 50px;
+    }
+
+    .page1 .col-left{
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+
+    .page1 .col-right{
+        margin-right: 50px;
+    }
+
+    .page2 .col-left{
+        margin-left: 50px;
+    }
+
+    .page2 .col-right{
+        margin-right: 50px;
+        margin-left: 150px;
+    }
+
+    .page3 .col-left{
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+
+    .page3 .col-right{
+        margin-right: 50px;
+    }
+    
+    .page4{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .page5 {
+        height: 800px;
+    }
+
+    .page5 .bottom .card1{
+        margin-left: 50px;
+    }
+
+    .page5 .bottom .card3{
+        margin-right: 50px;
+    }
+
+    .page6{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 150px;
+    }
+
+    .page7 .col-left{
+        margin-right: 400px;
+        margin-left: 50px;
+    }
+
+    .page7 .col-right{
+        margin-right: 150px;
+    }
+
+    .page8 .part1{
+        width: 20vw;
+        margin-left: 50px;
+    }
+
+    .page8 .part5{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .page1 .col-left{
+        margin-right: 50px;
+    }
+
+    .page1 .col-left h1{
+        font-size: 30px;
+        font-stretch: expanded;
+        margin-bottom: 30px;
+    }
+
+    .page2 .col-right{
+        margin-left: 50px;
+    }
+
+    .page2 .col-right h1{
+        font-size: 30px;
+        font-stretch: expanded;
+        margin-bottom: 30px;
+    }
+
+    .page3 .col-left{
+        margin-right: 50px;
+    }
+
+    .page3 .col-left h1{
+        font-size: 30px;
+        font-stretch: expanded;
+        margin-bottom: 30px;
+    }
+
+    .page4 .top h1{
+        font-size: 30px;
+    }
+
+    .page4 .bottom .card{
+        margin: 40px 40px;
+        height: 250px;
+        width: 200px;
+    }
+
+    .page5 .bottom .card .part2 ul{
+        list-style: none;
+        margin: 40px;
+        line-height: 40px;
+    }
+
+    .page5 .bottom .card1{
+        margin-left: 0px;
+    }
+
+    .page5 .bottom .card3{
+        margin-right: 0px;
+    }
+
+    .page5 .bottom .card {
+        height: 600px;
+        width: 300px;
+    }
+
+    .page7 .col-left{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .list-items{
+        display: none;
+    }
+    .navbar span button{
+        display: none;
+    }
+    
+    .navbar span{
+    display: none;        
+    }
+
+    .fa-bars{
+        visibility: visible;
+        margin-right: 50px;
+    }
+    
+    .page1 .col-right img{
+        width: 350px;
+    }
+
+    .page2 .col-left img{
+        width: 350px;
+    }
+
+    .page3 .col-right img{
+        width: 350px;
+    }
+   
+    .page4 .bottom .card{
+        margin: 40px 20px;
+        height: 250px;
+        width: 200px;
+    }
+
+    .page5 .top h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .page5 .bottom .card .part1 h3{
+        margin-left: 20px;
+    }
+    .page5 .bottom .card .part1 p{
+        margin-left: 20px;
+    }
+    .page5 .bottom .card .part2 ul{
+        list-style: none;
+        margin: 20px;
+        line-height: 40px;
+    }
+
+    .page5 .bottom .card {
+        height: 600px;
+        width: 280px;
+    }
+
+    .page6 {
+        height: 1300px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 150px;
+    }
+ 
+    .page6 .bottom .card {
+    width: 400px;
+    }
+
+    .page7 .col-left{
+        margin-right: 100px;
+    }
+
+    .page7 .col-right{
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 880px){
+
+    .page4{
+        height: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 820px){
+    .page1{
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page1 .col-left{
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page1 .col-left button{
+        margin-right: 0px;
+    }
+
+    .page1 .col-right{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .page2{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page2 .col-right{
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page2 .col-right button{
+        margin-right: 0px;
+    }
+
+    .page2 .col-left{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .page3{
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .page3 .col-left{
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page3 .col-left button{
+        margin-right: 0px;
+    }
+
+    .page3 .col-right{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .page5 {
+        height: 1500px;
+    }
+
+    .page6 .top {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .page7 .col-left h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .page8{
+        height: 600px;
+    }
+
+    .page8 .part1 {
+        margin: 20px 20px;
+    }
+
+    .page8 .part {
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 620px){
+
+    .page4 .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .page4{
+        height: 1300px;
+    }
+
+    .page4 .top h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .page4 .top p {
+        text-align: center;
+        margin-top: 20px;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 595px){
+    .page1{
+        margin-top: 50px;
+    }
+
+    .page4{
+        height: 2300px;
+    }
+    
+    .page5 {
+        height: 2100px;
+    }
+
+    .page7{
+        height: 56vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page7 .col-left{
+        margin-right: 50px;
+    }
+
+    .page7 .col-right{
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+    .page4 .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .page6 {
+        height: 1800px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .page6 .bottom .card {
+        height: 300px;
+    }
+
+    .page8{
+        height: 700px;
+    }    
+}
 
 
 
